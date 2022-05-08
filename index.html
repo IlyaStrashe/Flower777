@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <title>Flower</title>
+</head>
+
+<body>
+    <div class="body__page">
+        <nav class="menu__header">
+            <div class="burger__conteiner">
+                <button id="burger" class="burger">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </button>
+                <ul id="ListBtn" class="burger__blok">
+                    <li class="burger__list">
+                        <a href="" class="burger__link">Каталог</a>
+                    </li>
+                    <li class="burger__list">
+                        <a href="" class="burger__link">Доставка</a>
+                    </li>
+                    <li class="burger__list">
+                        <a href="" class="burger__link">Оплата</a>
+                    </li>
+                    <li class="burger__list">
+                        <a href="" class="burger__link">О нас</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="menu__logo">
+                <span class="logo">Flowers bird</span>
+            </div>
+            <div class="menu__icons">
+                <a href="" class="menu__item">
+                    <img src="./img/icons/coment.svg" alt="Сообщение" class="menu__img">
+                </a>
+                <a href="" class="menu__item">
+                    <img src="./img/icons/user.svg" alt="Кабинет" class="menu__img">
+                </a>
+                <a href="" class="menu__item">
+                    <img src="./img/icons/card.png" alt="Корзина" class="menu__img">
+                </a>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="container">
+                <div class="header__section">
+                    <div class="header__item">
+                        <h1 class="header__title">Каждый раскрывающийся цветок напоминает нам о том, что мир еще не
+                            устал от
+                            красок.
+                        </h1>
+                        <button class="btn btn__header">Заказать</button>
+                    </div>
+                    <div class="header__item slider__item">
+                        <div class="slider">
+                            <div class="item">
+                                <img src="./img/header.png" alt="Первый слайд">
+                                <div class="slideText"></div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./img/sweper1.png" alt="Второй слайд">
+                                <div class="slideText"></div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./img/header.png" alt="Третий слайд">
+                                <div class="slideText"></div>
+                            </div>
+                        </div>
+                        <div class="slider-dots">
+                            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section__product">
+            <div class="container">
+                <div class="product">
+                    <h2 class="section__title">новинки</h2>
+                    <div class="section__blok">
+                        <div class="product__item">
+                            <div class="product__link">
+                                <div class="product__sweper">
+                                    <img src="./img/sweper.png" alt="">
+                                </div>
+                                <div class="product__content">
+                                    <h3 class="product__title">“Нежность”
+                                        букет
+                                    </h3>
+                                    <span class="price">10500р.</span>
+                                    <button class="btn product__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__link">
+                                <div class="product__sweper">
+                                    <img src="./img/product2.png" alt="">
+                                </div>
+                                <div class="product__content">
+                                    <h3 class="product__title">“Нежность”
+                                        букет
+                                    </h3>
+                                    <span class="price">10500р.</span>
+                                    <button class="btn product__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__link">
+                                <div class="product__sweper">
+                                    <img src="./img/product3.png" alt="">
+                                </div>
+                                <div class="product__content">
+                                    <h3 class="product__title">“Нежность”
+                                        букет
+                                    </h3>
+                                    <span class="price">10500р.</span>
+                                    <button class="btn product__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__contacts">
+            <div class="container">
+                <div class="contacts">
+                    <h2 class="section__title contact__title">Контакты</h2>
+                    <div class="contact__blok">
+                        <div class="contacs__item">
+                            <h3 class="header__title">Связаться удобным
+                                способом
+                                Свяжитесь с нами и дайте нам знать,
+                                чем мы можем помочь.</h3>
+                        </div>
+                        <div class="contacs__item item__contact ">
+                            <div class="contacts__link">
+                                <div class="link__contact">
+                                    <img src="./img/icons/phone.svg" alt="">
+                                    <a href="tel:+79999999999" class="content__link">+7(999)999-99-99</a>
+                                </div>
+                            </div>
+                            <div class="contacts__link ">
+                                <div class="link__contact">
+                                    <img src="./img/icons/Whats.svg" alt="">
+                                    <a href="#" class="content__link">whatsapp</a>
+                                </div>
+                            </div>
+                            <div class="contacts__link">
+                                <div class="link__contact">
+                                    <img src="./img/icons/sms.svg" alt="">
+                                    <a href="#" class="content__link">fffffhhhh@mail.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts__link">
+                                <div class="link__contact">
+                                    <img src="./img/icons/content.svg" alt="">
+                                    <a href="#" class="content__link">Частые вопросы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section__info">
+            <div class="container">
+                <div class="info">
+                    <h2 class="section__title">Букет на заказ</h2>
+                    <span class="section__subtitle">Составим букет по вашим пожеланиям</span>
+
+                    <div class="info__content">
+                        <div class="info__item">
+                            <img src="./img/section4.png" alt="" class="info__img">
+                        </div>
+                        <div class="info__item">
+                            <img src="./img/section4(2).png" alt="" class="info__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__discount">
+            <div class="container">
+                <div class="discount">
+                    <h2 class="section__title">Получите свою скидку</h2>
+                    <div class="discount__content">
+                        <div class="discount__item item__discount">
+                            <form action="#" method="post" class="discount__form">
+                                <label class="form__label" for="tel">Номер телефона</label>
+                                <input type="tel" class="discount__form__item">
+                            </form>
+                            <button type="submit" class="fotmBtn"></button>
+                        </div>
+                        <div class="discount__item">
+                            <img src="./img/section5.jpeg" alt="" class="discount__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__Reviews">
+            <div class="container">
+                <h2 class="section__title">Наши счастливые клиенты </h2>
+                <div class="Reviews">
+
+                    <div class="Reviews__item">
+                        <img src="./img/client1.png" alt="">
+                    </div>
+                    <div class="Reviews__item">
+                        <img src="./img/client2.png" alt="">
+                    </div>
+                    <div class="Reviews__item">
+                        <img src="./img/client3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__title">
+                    <a href="#" class="title__footer">На вверх</a>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__blok blok__footer">
+                        <div class="footer__item">
+                            <div class="footer__logo">Flowers bird</div>
+                            <div class="footer__sublogo">Договор оферты</div>
+                        </div>
+                        <div class="blok__menu__footer">
+                            <div class="footer__item item__footer">
+                                <nav class="footer__nav">
+                                    <ul class="footer__list">
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">Главная</a>
+                                        </li>
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">о магазине</a>
+                                        </li>
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">Доставка</a>
+                                        </li>
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="footer__item">
+                                <nav class="footer__nav">
+                                    <ul class="footer__list">
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">Оплата</a>
+                                        </li>
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">Программа лояльности</a>
+                                        </li>
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">Возврат</a>
+                                        </li>
+                                        <li class="footer__link">
+                                            <a href="" class="footer__links">уход за цветами </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__blok blok__right">
+                        <div class="footer__phone">
+                            <a href="#" class="phone__footer">Заказать звонок</a>
+                        </div>
+                        <div class="footer__email">
+                            <a href="#" class="email__footer">fffffhhhh@mail.ru</a>
+                        </div>
+                        <span class="footer__text">2022 © Все права защищены</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
